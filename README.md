@@ -1,6 +1,11 @@
 # Advent-of-Code
 
 Uploading my solutions and setup scripts for the yearly aoc event!
+
+## General workflow
+
+I commit to my branch `my_solutions`. Whoever wants to join the party can create their own branch. Any language is allowed, might just have to mod the bash scripts.
+
 ## Prerequisites
 1. Linux installed (WSL2 is a common windows workaround)
 2. C++ compiler. Example install of the [GNU](https://gcc.gnu.org/) compiler collection for `apt` based linux distros:
