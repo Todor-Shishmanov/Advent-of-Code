@@ -1,5 +1,7 @@
 #include <fstream>
 #include <iostream>
+#include <cassert>
+#include <string>
 
 #define DEBUG_LEVEL 1
 
@@ -22,12 +24,18 @@ int main(int argc, char *argv[]) {
 }
 
 void solution(std::ifstream& in_f) {
-  /* Add stuff here */
-
   /* Simple debug like */
   #if DEBUG_LEVEL == 1
   std::cout << "Hello world\n";
   #endif
 
+  std::string line;
+  while(std::getline(in_f, line)){
+    // Assert as much as possible!
+    assert(line.size() != 0);
+
+    /* Add stuff here */
+  }
+  
   return;
 }
