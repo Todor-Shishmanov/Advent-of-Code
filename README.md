@@ -20,6 +20,7 @@ Before we use the bash scripts we must first give them executable rights.
 ```bash
 sudo chmod +x /path-to-repo/Advent-of-Code/utility/aoc_setup.sh
 sudo chmod +x /path-to-repo/Advent-of-Code/utility/aoc_compile_run.sh
+sudo chmod +x /path-to-repo/Advent-of-Code/utility/aoc_alias.sh
 ```
 
 ### Setup and downloading inputs
@@ -39,12 +40,11 @@ A simple script for compiling and running is provided as a timesaver.
 
 ### Example usage
 
-Setting up alliaces for convenience.
+[optional] Setting up alliaces for convenience.
 ```bash
-alias aoc_setup=/path-to-repo/Advent-of-Code/utility/aoc_setup.sh
-alias aoc_run=/path-to-repo/Advent-of-Code/utility/aoc_compile_run.sh
+source ./utility/aoc_alias.sh
 ```
-[optional] You can even add those the your `~/.bashrc` or `~/.profile` to make them permanent.
+You can even add those the your `~/.bashrc` or `~/.profile` to make them permanent.
 
 Now let's download and compile our first AoC code!
 
@@ -52,5 +52,4 @@ Now let's download and compile our first AoC code!
 aoc_setup 2023 1
 aoc_run 2023 1
 ```
-
-You're ready to go!
+Yes it's that simple! You're ready to go!
